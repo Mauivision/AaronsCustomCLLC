@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --warm-stone: #f5f0eb;
+  --warm-sand: #e8e0d5;
+  --warm-wood: #8b6914;
+  --warm-bark: #5c4a1a;
+  --charcoal: #2d2926;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-warm-charcoal antialiased;
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-warm-wood focus-visible:ring-offset-2;
+  }
+}
