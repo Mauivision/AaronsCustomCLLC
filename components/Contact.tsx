@@ -35,27 +35,31 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="px-6 py-16 md:py-24 bg-warm-stone"
+      className="bg-warm-sand/40 px-6 py-16 md:py-24"
       aria-labelledby="contact-heading"
     >
       <div className="mx-auto max-w-2xl">
-        <h2 id="contact-heading" className="font-display text-3xl md:text-4xl font-semibold text-warm-bark text-center">
-          Ready to Make Your House Feel Like Home?
+        <p className="section-label">Get in touch</p>
+        <h2
+          id="contact-heading"
+          className="mt-2 font-display text-3xl font-semibold text-warm-bark md:text-4xl"
+        >
+          Ready to make your house feel like home?
         </h2>
-        <p className="mt-4 text-center text-warm-charcoal/90">
+        <p className="mt-4 text-warm-charcoal/90">
           Get in touch for a free quote. Call, email, or send a message below.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center text-center">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-8">
           <a
             href="tel:+15551234567"
-            className="focus-ring text-warm-bark font-medium hover:underline"
+            className="focus-ring font-medium text-warm-bark transition duration-300 hover:underline"
           >
             (555) 123-4567
           </a>
           <a
             href="mailto:aaron@aaronscustomcarpentry.com"
-            className="focus-ring text-warm-bark font-medium hover:underline"
+            className="focus-ring font-medium text-warm-bark transition duration-300 hover:underline"
           >
             aaron@aaronscustomcarpentry.com
           </a>
@@ -72,7 +76,7 @@ export default function Contact() {
               type="text"
               name="name"
               required
-              className="focus-ring rounded-md border border-warm-sand bg-white px-4 py-2 text-warm-charcoal"
+              className="focus-ring rounded-md border border-warm-sand bg-warm-stone px-4 py-2 text-warm-charcoal"
               placeholder="Your name"
             />
           </label>
@@ -82,7 +86,7 @@ export default function Contact() {
               type="email"
               name="email"
               required
-              className="focus-ring rounded-md border border-warm-sand bg-white px-4 py-2 text-warm-charcoal"
+              className="focus-ring rounded-md border border-warm-sand bg-warm-stone px-4 py-2 text-warm-charcoal"
               placeholder="you@example.com"
             />
           </label>
@@ -91,7 +95,7 @@ export default function Contact() {
             <input
               type="tel"
               name="phone"
-              className="focus-ring rounded-md border border-warm-sand bg-white px-4 py-2 text-warm-charcoal"
+              className="focus-ring rounded-md border border-warm-sand bg-warm-stone px-4 py-2 text-warm-charcoal"
               placeholder="(555) 000-0000"
             />
           </label>
@@ -100,14 +104,14 @@ export default function Contact() {
             <textarea
               name="message"
               rows={4}
-              className="focus-ring rounded-md border border-warm-sand bg-white px-4 py-2 text-warm-charcoal resize-y"
+              className="focus-ring resize-y rounded-md border border-warm-sand bg-warm-stone px-4 py-2 text-warm-charcoal"
               placeholder="Tell us about your project..."
             />
           </label>
           <button
             type="submit"
             disabled={status === "sending"}
-            className="focus-ring mt-2 rounded-md bg-warm-wood px-6 py-3 font-medium text-white shadow-md transition hover:bg-warm-bark disabled:opacity-70"
+            className="focus-ring mt-2 rounded-md bg-warm-wood px-6 py-3 font-medium text-white shadow-md transition duration-300 hover:bg-warm-bark disabled:opacity-70"
           >
             {status === "sending"
               ? "Sending..."
@@ -119,7 +123,7 @@ export default function Contact() {
           </button>
           {status === "sent" && (
             <p className="text-sm text-green-700" role="status">
-              Thanks! We’ll get back to you soon.
+              Thanks! We&apos;ll get back to you soon.
             </p>
           )}
           {status === "error" && (

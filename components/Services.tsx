@@ -25,21 +25,26 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="px-6 py-16 md:py-24 bg-warm-stone"
+      className="px-6 py-16 md:py-24"
       aria-labelledby="services-heading"
     >
       <div className="mx-auto max-w-5xl">
-        <h2 id="services-heading" className="font-display text-3xl md:text-4xl font-semibold text-warm-bark text-center">
-          What We Do
+        <p className="section-label">What we do</p>
+        <h2
+          id="services-heading"
+          className="mt-2 font-display text-3xl font-semibold text-warm-bark md:text-4xl"
+        >
+          Design and installation for every room
         </h2>
-        <p className="mt-4 text-center text-lg text-warm-charcoal/90 max-w-2xl mx-auto">
-          Design and installations for any size project—from single rooms to full renovations.
+        <p className="mt-4 max-w-2xl text-lg text-warm-charcoal/90">
+          From a single room refresh to a full-house renovation—we handle design and build in one.
         </p>
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list">
+
+        <ul className="mt-12 grid gap-8 sm:grid-cols-2" role="list">
           {services.map(({ title, description }) => (
             <li
               key={title}
-              className="rounded-xl border border-warm-sand bg-white p-6 shadow-sm transition hover:shadow-md"
+              className="border-l-4 border-warm-wood/60 pl-6"
             >
               <h3 className="font-display text-xl font-semibold text-warm-bark">
                 {title}
