@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -10,12 +12,12 @@ export default function Footer() {
           Turn your house into a home
         </p>
         <div className="flex gap-6 text-sm">
-          <a
-            href="tel:+15551234567"
-            className="focus-ring text-warm-stone/90 hover:text-warm-stone"
+          <Link
+            href="/contact"
+            className="focus-ring text-warm-stone/90 hover:text-warm-stone underline-offset-2 hover:underline"
           >
-            (555) 123-4567
-          </a>
+            Click here to contact
+          </Link>
           <a
             href="mailto:aaron@aaronscustomcarpentry.com"
             className="focus-ring text-warm-stone/90 hover:text-warm-stone"

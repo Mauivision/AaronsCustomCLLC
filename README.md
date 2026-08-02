@@ -20,9 +20,9 @@ npm start
 
 ## Customize
 
-- **Contact info:** Update phone and email in `components/Contact.tsx` and `components/Footer.tsx` (search for `555` and `aaronscustomcarpentry.com`).
+- **Contact info:** Update email in `components/Contact.tsx` and `components/Footer.tsx` (search for `aaronscustomcarpentry.com`). The public site does not display a phone number; visitors use `/contact`.
 - **Images:** Project photos live in `public/images/`. To use your headshot in About, copy it to `public/images/aaron-headshot.png`. To show the sliders and kitchen project photos in the gallery, copy the PNGs from this project’s `assets` folder (in Cursor’s project data) into `public/images/` as `aaron-sliders.png` and `aaron-kitchen.png`. Update `components/Hero.tsx` or `components/Gallery.tsx` if you add or rename other images.
-- **Contact form:** The form posts to `/api/contact`. To send real emails, add your provider (e.g. Resend, SendGrid) in `app/api/contact/route.ts`.
+- **Contact form:** The form lives on `/contact` and posts to `/api/contact`. To send real emails, add your provider (e.g. Resend, SendGrid) in `app/api/contact/route.ts`.
 
 ## Tech
 

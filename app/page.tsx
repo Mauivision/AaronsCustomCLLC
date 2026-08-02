@@ -1,6 +1,5 @@
 import About from "~/components/About";
-import Contact from "~/components/Contact";
-import Footer from "~/components/Footer";
+import ContactCta from "~/components/ContactCta";
 import Gallery from "~/components/Gallery";
 import Hero from "~/components/Hero";
 import Services from "~/components/Services";
@@ -14,8 +13,7 @@ export default function Home() {
       <Services />
       <WhyChoose />
       <Gallery />
-      <Contact />
-      <Footer />
+      <ContactCta />
     </main>
   );
 }

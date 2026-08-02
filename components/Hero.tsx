@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <Link
-            href="#contact"
+            href="/contact"
             className="focus-ring inline-block rounded-md bg-warm-wood px-6 py-3 text-center font-medium text-white shadow-md transition hover:bg-warm-bark"
           >
             Get a Free Quote
