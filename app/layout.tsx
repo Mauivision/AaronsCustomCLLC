@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Crimson_Pro, Source_Sans_3 } from "next/font/google";
+import Footer from "~/components/Footer";
 import "./globals.css";
 
 const display = Crimson_Pro({
@@ -35,6 +36,7 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
+        <Footer />
       </body>
     </html>
   );

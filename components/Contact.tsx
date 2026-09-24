@@ -39,20 +39,17 @@ export default function Contact() {
       aria-labelledby="contact-heading"
     >
       <div className="mx-auto max-w-2xl">
-        <h2 id="contact-heading" className="font-display text-3xl md:text-4xl font-semibold text-warm-bark text-center">
+        <h1
+          id="contact-heading"
+          className="font-display text-3xl md:text-4xl font-semibold text-warm-bark text-center"
+        >
           Ready to Make Your House Feel Like Home?
-        </h2>
+        </h1>
         <p className="mt-4 text-center text-warm-charcoal/90">
-          Get in touch for a free quote. Call, email, or send a message below.
+          Get in touch for a free quote. Email us or send a message below.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center text-center">
-          <a
-            href="tel:+15551234567"
-            className="focus-ring text-warm-bark font-medium hover:underline"
-          >
-            (555) 123-4567
-          </a>
+        <div className="mt-10 flex justify-center text-center">
           <a
             href="mailto:aaron@aaronscustomcarpentry.com"
             className="focus-ring text-warm-bark font-medium hover:underline"
@@ -92,7 +89,7 @@ export default function Contact() {
               type="tel"
               name="phone"
               className="focus-ring rounded-md border border-warm-sand bg-white px-4 py-2 text-warm-charcoal"
-              placeholder="(555) 000-0000"
+              placeholder="Your phone number"
             />
           </label>
           <label className="flex flex-col gap-1">
@@ -119,12 +116,12 @@ export default function Contact() {
           </button>
           {status === "sent" && (
             <p className="text-sm text-green-700" role="status">
-              Thanks! We’ll get back to you soon.
+              Thanks! We&apos;ll get back to you soon.
             </p>
           )}
           {status === "error" && (
             <p className="text-sm text-red-700" role="alert">
-              Something went wrong. Please call or email us directly.
+              Something went wrong. Please email us directly.
             </p>
           )}
         </form>
